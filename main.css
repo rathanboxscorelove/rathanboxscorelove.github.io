@@ -1,0 +1,264 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+  /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
+  color:#333;
+  line-height:1.51;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 1.505em;
+  margin: 0 0 1.4em 0;
+  text-rendering: optimizelegibility;
+}
+
+/*
+.subHeader{
+  font-size:1.5em;
+  font-weight:600;
+  line-height:1.5em;
+  margin-bottom:1.5em;
+  text-transform: uppercase;
+}
+
+*/
+
+
+
+em{
+  font-style:italic
+}
+
+header {
+}
+
+section {
+}
+
+body {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin:0;
+  letter-spacing: -1.05px;
+  line-height: 1.3em;
+  color:inherit;
+  display:inherit;
+  text-rendering:optimizelegibility
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{
+  font-family: inherit;
+  font-weight:normal;
+  color:#7b7b7b
+}
+
+h1,h2,h3{
+  line-height:1.45em;
+}
+
+h1{
+  font-size: 3.25rem;
+}
+
+
+
+h2{
+  font-size: 2.25rem;
+}
+
+h3{
+  font-size:1.54rem;
+}
+
+h4{
+  font-size:1.55rem;
+}
+
+h5{
+  font-size:1.5rem
+}
+
+h6{
+  font-size:1.1em
+}
+
+h1 small{
+  font-size:2.8em;
+}
+
+h2 small{
+  font-size:2.1em;
+}
+
+h3 small{
+  font-size:1.8em;
+}
+
+h4 small{
+  font-size:14px
+}
+
+ul,ol{
+  padding:0
+}
+
+li{
+  line-height:1.51;
+  list-style: none;
+  padding: 0 0 1em 0;
+}
+
+a, button {
+  color:#333;
+  text-decoration:none;
+  -webkit-transition:0.2s ease color;
+  transition: 0.2s ease color;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-center {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  min-width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+
+picture {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1500px) {
+  img {
+    height: auto;
+    min-height: calc(100vh + 8px);
+  }
+  picture {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  picture {
+    margin-top: 4em;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  picture {
+    margin-top: 6em;
+  }
+}
+
+.photo-width, .birthday {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.photo-width {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo-width {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.lazyload {
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+.lazyloading {
+  background-color: #ff00dd;
+}
+.blur-up {
+    -webkit-filter: blur(25px);
+    filter: blur(25px);
+    transition: filter 500ms, -webkit-filter 500ms;
+}
+
+.blur-up.lazyloaded {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+.birthday, .annual {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.birthday {
+  text-align: center;
+  background-color: rgba(0,0,0,.5);
+}
+
+.annual {
+  margin-top: 3em;
+  position: relative;
+}
+
+.annual, .lambert {
+  width: 100%;
+}
