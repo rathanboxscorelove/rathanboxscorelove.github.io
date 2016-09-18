@@ -173,9 +173,18 @@ nav {
 }
 
 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 1em; }
   @media only screen and (min-width: 700px) {
     nav {
@@ -184,8 +193,14 @@ nav {
   }
 
 .back a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fa {
@@ -261,4 +276,5 @@ a.active {
   .mobile-hide {
     display:none;
     visibility: hidden;
+}
 }
