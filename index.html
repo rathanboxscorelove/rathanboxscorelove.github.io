@@ -4,7 +4,7 @@
     <meta name="description" content="Fantisserie">
 
     <title>Fantisserie</title>
-    <meta name="author" content="Lambert Nguyen">
+    <meta name="author" content="Fantisserie">
     <meta name="keywords" content="Fantasy, Football, Gaming">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
 
@@ -17,42 +17,102 @@
     <link rel="shortcut icon" href="../assets/favicon.png">
     <link rel="icon" type="image" href="../assets/favicon.png">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
+    <style>
+       h2 {
+         font-family: sans-serif;
+         font-size: 3.125rem;
+         font-weight: 900;
+         text-align: center;
+       }
+       h4 {
+         font-family: sans-serif;
+         font-size: 1.375rem;
+         font-weight: 300;
+         text-align: center;
+       }
+       .call-to-action, .legal-footer {
+         z-index: 3;
+         color: #ffffff;
+         text-align: center;
+       }
+       .call-to-action {
+         position: absolute;
+         left: 0;
+         right: 0;
+       }
+       .legal-footer {
+         position: absolute;
+         bottom: 2em;
+       }
+       .front {
+         background-image: linear-gradient(-180deg, #FEEC40 0%, #9BB743 100%);
+       }
+    </style>
     <link href="main.css" rel="stylesheet">
+    <style>
+      @import 'https://fonts.googleapis.com/css?family=Fira+Sans:300,500,700';
+    </style>
+    <script src="https://use.fontawesome.com/0aee54882c.js" async=""></script>
 
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
     <script src="js/lazysizes.min.js" async=""></script>
-    <script src="js/pictrefill.min.js" async=""></script>
+    <script src="js/picturefill.min.js" async=""></script>
 
   </head>
   <body>
     <div class="body-center">
-      <div class="photo-width">
+      <div class="call-to-action">
+        <h2 class="an-s">Follow Us</h2>
+        <h4 class="an-s">We'll be sharing early levels of our game exclusively through links we post on social media</h4>
+        <div class="social">
+          <ul>
+            <li class="an-s">
+              <a href="https://twitter.com/fantisserie" target="_blank" title="Our Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="an-s">
+              <a href="https://www.facebook.com/fantisserie/" target="_blank" title="Our Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="an-s">
+              <a href="https://www.instagram.com/fantisserie/" target="_blank" title="Our Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal-footer">
+        <a href="/privacy" title="Privacy Policy">Legal $#!%</a>
+      </div>
+      <div class="photo-width front">
         <picture>
           <source
-              src="assets/placeholder.jpg"
-              data-srcset="assets/large.jpg"
+              srcset="assets/front-large.png"
+              data-srcset="assets/front-large.png"
               media="(min-width: 1200px)" />
           <source
-              src="assets/placeholder.jpg"
-              data-srcset="assets/medium.jpg"
+              srcset="assets/front-medium.png"
+              data-srcset="assets/front-medium.png"
               media="(min-width: 1000px)" />
           <source
-              src="assets/placeholder.jpg"
-              data-srcset="assets/small.jpg"
+              srcset="assets/front-small.png"
+              data-srcset="assets/front-small.png"
               media="(min-width: 700px)" />
           <source
-              src="assets/placeholder.jpg"
-          		data-srcset="assets/phone.jpg"
-          		media="(min-width: 100px)" />
+              srcset="assets/front-phone.png"
+              data-srcset="assets/front-phone.png"
+              media="(min-width: 100px)" />
           <img
               data-sizes="auto"
-              src="assets/placeholder.jpg"
-              data-src="assets/placeholder.jpg"
-              class="lazyload blur-up" />
+              src="assets/placeholder.png"
+              data-src="assets/front-small.png"
+              class="lazyload blur-up bottom" />
         </picture>
       </div>
     </div>

@@ -1,14 +1,14 @@
 html{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
   /* font-family:proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif; */
   color:#333;
   line-height:1.51;
 }
 
 p{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 1.505em;
   margin: 0 0 1.4em 0;
   text-rendering: optimizelegibility;
@@ -46,8 +46,7 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-family: 'Fira Sans', sans-serif;
   margin:0;
   letter-spacing: -1.05px;
   line-height: 1.3em;
@@ -73,16 +72,38 @@ h1{
 
 
 h2{
-  font-size: 2.25rem;
+  font-size: 3.125rem;
+  font-weight: 900;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 700px) {
+    h2 {
+      font-size: 5rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      font-size: 6.25rem;
+    }
 }
+
 
 h3{
   font-size:1.54rem;
 }
 
 h4{
-  font-size:1.55rem;
-}
+  font-size:1.375rem;
+  font-weight: 300; }
+  @media only screen and (min-width: 700px) {
+    h4 {
+      font-size: 1.875rem;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    h4 {
+      font-size: 2.188rem;
+    }
+  }
 
 h5{
   font-size:1.5rem
@@ -136,12 +157,85 @@ body {
   position: relative;
 }
 
+.call-to-action, .legal-footer {
+  color: #ffffff;
+  text-align: center;
+  z-index: 3;
+}
+
+.call-to-action {
+  left: .45em;
+  right: .45em;
+  bottom: 5em;
+}
+
+.legal-footer {
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  right: 0; }
+  @media only screen and (min-width: 1000px) {
+    .legal-footer {
+      right: 4em;
+      bottom: 3em;
+      text-align: right;
+    }
+}
+
+.call-to-action h2 {
+  text-shadow: 0px 2px 4px #577319;
+}
+
+a {
+  color: #ffffff;
+  transition: .1s ease-out;
+}
+
+a:hover {
+  color: #f2f2f2;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+ul {
+  display: flex;
+}
+
+li a {
+  padding: 2em;
+}
+
+i {
+  font-size: 1.5rem !important; }
+  @media only screen and (min-width: 700px) {
+    i {
+      font-size: 2rem !important;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    i {
+      font-size: 2.5rem !important;
+    }
+}
+
+
 img {
-  min-width: 100%;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
-          flex: none;
+          flex: none; }
+  @media only screen and (max-width: 700px) {
+    img {
+      width: 100%;
+    }
+    .bottom {
+      margin-bottom: 3em;
+    }
 }
 
 
@@ -153,37 +247,12 @@ picture {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-@media only screen and (min-width: 1500px) {
-  img {
-    height: auto;
-    min-height: calc(100vh + 8px);
-  }
-  picture {
-    margin-top: 2em;
-  }
-}
 
-@media only screen and (min-width: 1700px) {
-  picture {
-    margin-top: 4em;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  picture {
-    margin-top: 6em;
-  }
-}
 
 .photo-width, .birthday {
   position:absolute;
@@ -249,16 +318,95 @@ picture {
           align-items: center;
 }
 
-.birthday {
-  text-align: center;
-  background-color: rgba(0,0,0,.5);
+.front {
+  z-index: 2;
 }
 
-.annual {
-  margin-top: 3em;
-  position: relative;
+.front {
+  background-image: linear-gradient(-180deg, #FEEC40 0%, #9BB743 100%);
 }
 
-.annual, .lambert {
-  width: 100%;
+.front {
+  background-image: url("assets/back-phone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 700px) {
+    .front {
+      background-image: url("assets/back-desktop.jpg");
+    }
+}
+
+@media only screen and (min-width: 700px) {
+  .an-s {
+    opacity: 0;
+  }
+  picture img {
+    -webkit-animation: fadeinbelow 1.2s cubic-bezier(0.03, 0.88, 0.49, 1.17) forwards;
+    animation: fadeinbelow 1.2s cubic-bezier(0.03, 0.88, 0.49, 1.17) forwards;
+  }
+
+   .call-to-action h2, .call-to-action h4, .legal-footer a {
+    -webkit-animation: fadeinbelow .5s ease forwards;
+    animation: fadeinbelow .5s ease forwards;
+    opacity: 0;
+  }
+
+  .call-to-action h2 {
+    -webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+  }
+
+  .call-to-action h4 {
+    -webkit-animation-delay: 1.35s;
+    animation-delay: 1.35s;
+  }
+
+  .legal-footer a {
+    -webkit-animation-delay: 1.65s;
+    animation-delay: 1.85s;
+  }
+
+  .social ul li {
+    -webkit-animation: fadeinbelow .5s ease forwards;
+    animation: fadeinbelow .5s ease forwards;
+    -webkit-animation-delay: 1.45s;
+    animation-delay: 1.5s;
+    opacity: 0;
+  }
+
+  .social ul li:nth-of-type(2) {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.6s;
+  }
+
+  .social ul li:nth-of-type(3) {
+    -webkit-animation-delay: 1.55s;
+    animation-delay: 1.7s;
+  }
+}
+
+@-webkit-keyframes fadeinbelow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-0%);
+  }
+}
+@keyframes fadeinbelow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
