@@ -231,11 +231,8 @@ a.active {
 }
 
 .content {
-  margin: auto; }
-  @media only screen and (min-width: 700px) {
-  .content {
-    max-width: 1100px;
-  }
+  margin: auto;
+  max-width: 1100px;
 }
 
 .content--main {
