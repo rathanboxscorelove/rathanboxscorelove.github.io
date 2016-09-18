@@ -130,7 +130,8 @@ h4 small{
 }
 
 ul,ol{
-  padding:0
+  padding:0;
+  margin: 0;
 }
 
 li{
@@ -166,7 +167,7 @@ body {
 .call-to-action {
   left: .45em;
   right: .45em;
-  bottom: 5em;
+  bottom: 4em;
 }
 
 .legal-footer {
@@ -199,7 +200,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1em 0;
+  margin: 1em 0 0 0;
 }
 
 ul {
@@ -234,7 +235,7 @@ img {
       width: 100%;
     }
     .bottom {
-      margin-bottom: 3em;
+      margin-bottom: 7em;
     }
 }
 
