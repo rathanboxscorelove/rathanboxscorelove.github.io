@@ -168,6 +168,11 @@ body {
   left: .45em;
   right: .45em;
   bottom: 4em;
+  margin: auto; }
+  @media only screen and (min-width: 700px) {
+    .call-to-action {
+      max-width: 730px;
+    }
 }
 
 .legal-footer {
@@ -221,7 +226,8 @@ ul {
 }
 
 li a {
-  padding: 2em;
+  display: block;
+  padding: 1em 2em;
 }
 
 i {
@@ -239,17 +245,23 @@ i {
 
 
 img {
+  width: 100%;
   -webkit-box-flex: 0;
   -webkit-flex: none;
       -ms-flex: none;
           flex: none; }
   @media only screen and (max-width: 700px) {
-    img {
-      width: 100%;
-    }
     .bottom {
       margin-bottom: 7em;
     }
+}
+@media only screen and (min-width: 1200px) {
+  img {
+    max-width: 1000px;
+  }
+  .bottom {
+    margin-bottom: 7em;
+  }
 }
 
 
@@ -271,8 +283,12 @@ picture {
           align-items: center;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
-          align-content: center;
-}
+          align-content: center; }
+  @media only screen and (min-width: 700px) {
+    picture {
+      width: 80%;
+    }
+  }
 
 
 
