@@ -105,7 +105,7 @@
     </div>
 
 
-    <div id="kickstarter">
+    <div id="kickstarter" class="header animated header--fixed">
       <div class="kickstarter--content">
         <span class="h3 white">Launching On kickstarter soon!</span>
         <div class="kickstarter--email">
@@ -142,22 +142,22 @@
       </div>
     </div>
 
-    <!--
-    <script src="../assets/js/headroom.min.js"></script>
+
+    <script src="../assets/headroom.min.js"></script>
     <script>
       (function() {
-        var header = new Headroom(document.querySelector("#header"), {
+        var header = new Headroom(document.querySelector("#kickstarter"), {
             tolerance: 3,
             offset: 50,
             classes: {
               initial: "animated",
-              pinned: "slideDown",
-              unpinned: "slideUp"
+              pinned: "slideUp",
+              unpinned: "slideDown"
             }
         });
         header.init();
 
     }());
-  </script> -->
+  </script>
   </body>
 </html>
